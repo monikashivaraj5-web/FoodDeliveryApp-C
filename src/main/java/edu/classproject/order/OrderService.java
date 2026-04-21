@@ -1,9 +1,9 @@
 package edu.classproject.order;
 
+import java.util.List;
+
 public interface OrderService {
-    Order placeOrder(OrderRequest request);
-
-    Order getOrder(String orderId);
-
-    void updateStatus(String orderId, String status);
+    Order getOrderById(String orderId);
+    List<Order> getAllOrders();
+    void updateOrder(Order order);
 }
